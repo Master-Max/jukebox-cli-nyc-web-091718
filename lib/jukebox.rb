@@ -56,7 +56,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   entry = gets.chomp
   the_song = nil
-  if entry.class == Integer
+  if entry.to_i.class == Integer
     the_song = songs[entry - 1]
   else
     the_song = songs.find do |x|
