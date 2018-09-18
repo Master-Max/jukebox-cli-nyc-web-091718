@@ -55,7 +55,8 @@ end
 def play
   puts "Please enter a song name or number:"
   entry = gets.chomp
-  
+  if entry.class == Integer
+    puts songs[entry - 1]
 end
 
 #puts "Enter your name:"
