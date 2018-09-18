@@ -47,7 +47,6 @@ def play(songs)
   entry = gets.chomp
   the_song = nil
   if entry.to_i
-    binding.pry
     the_song = songs[entry.to_i - 1]
   else
     the_song = songs.find do |x|
