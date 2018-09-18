@@ -55,9 +55,7 @@ def play(songs)
   if is_num?(entry)
     the_song = songs[entry.to_i - 1]
   else
-    the_song = songs.find do |x|
-      x == entry
-    end
+    the_song = songs.find {|x| x == entry}
   end
   if !!the_song
       puts "Playing #{the_song}"
