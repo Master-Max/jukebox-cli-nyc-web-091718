@@ -54,7 +54,6 @@ def play(songs)
   the_song = nil
   if is_num?(entry)
     the_song = songs[entry.to_i - 1]
-    #puts "Playing #{the_song}"
   else
     the_song = songs.find do |x|
       x == entry
