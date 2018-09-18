@@ -58,12 +58,16 @@ def play(songs)
     else
       the_song = songs[entry.to_i - 1]
     end
+    puts "Playing #{the_song}"
   else
     the_song = songs.find do |x|
       x == entry
     end
+    if !!the_song
+      puts "Playing #{the_song}"
+    else
+      puts "Invalid input, please try again"
   end
-  puts "Playing #{the_song}"
 end
 
 #puts "Enter your name:"
