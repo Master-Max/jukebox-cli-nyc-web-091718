@@ -57,6 +57,11 @@ def play
   entry = gets.chomp
   if entry.class == Integer
     puts songs[entry - 1]
+  else
+    the_song = songs.find do |x|
+      x == entry
+    end
+    puts the_song
 end
 
 #puts "Enter your name:"
