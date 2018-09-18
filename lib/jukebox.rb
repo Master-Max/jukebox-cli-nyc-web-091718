@@ -40,6 +40,7 @@ def list
   while i < songs.size do
     puts "#{i+1}. #{songs[i]}"
     i += 1
+  end
 end
 
 def help
