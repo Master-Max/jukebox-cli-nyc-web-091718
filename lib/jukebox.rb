@@ -53,12 +53,8 @@ def play(songs)
   entry = gets.chomp
   the_song = nil
   if is_num?(entry)
-    #if entry.to_i > songs.size && entry.to_i > 0
-      #puts "Invalid input, please try again"
-    #else
-      the_song = songs[entry.to_i - 1]
-    #end
-    puts "Playing #{the_song}"
+    the_song = songs[entry.to_i - 1]
+    #puts "Playing #{the_song}"
   else
     the_song = songs.find do |x|
       x == entry
