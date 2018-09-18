@@ -67,7 +67,7 @@ def play(songs)
 end
 
 def exit
-  exit
+  exit(0)
 end
 #puts "Enter your name:"
 #users_name = gets.chomp
