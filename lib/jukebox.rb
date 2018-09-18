@@ -42,11 +42,17 @@ def help
   puts "Please enter a command:"
 end
 
+def is_num?(str)
+  !!Integer(str)
+rescue ArgumentError, TypeError
+  false
+end
+
 def play(songs)
   puts "Please enter a song name or number:"
   entry = gets.chomp
   the_song = nil
-  if entry.to_i
+  if is_num?(entry)
     the_song = songs[entry.to_i - 1]
   else
     the_song = songs.find do |x|
