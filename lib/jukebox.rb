@@ -57,6 +57,7 @@ def play(songs)
   else
     the_song = songs.find {|x| x == entry}
   end
+  
   if !!the_song
       puts "Playing #{the_song}"
     else
