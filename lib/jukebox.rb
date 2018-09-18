@@ -59,10 +59,10 @@ def play(songs)
   end
   
   if !!the_song
-      puts "Playing #{the_song}"
-    else
-      puts "Invalid input, please try again"
-    end
+    puts "Playing #{the_song}"
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 #puts "Enter your name:"
