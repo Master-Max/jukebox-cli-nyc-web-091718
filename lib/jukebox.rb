@@ -67,7 +67,7 @@ def play(songs)
 end
 
 def exit
-  puts "Goodby"
+  puts "Goodbye"
   exit(0)
 end
 #puts "Enter your name:"
