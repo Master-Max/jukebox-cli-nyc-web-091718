@@ -25,7 +25,7 @@ def say_hello(name)
   "Hi #{name}!"
 end
 
-def list
+def list(songs)
   i = 0
   while i < songs.size do
     puts "#{i+1}. #{songs[i]}"
