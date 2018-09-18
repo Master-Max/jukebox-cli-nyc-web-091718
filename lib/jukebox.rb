@@ -52,6 +52,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   entry = gets.chomp
   the_song = nil
+  
   if is_num?(entry)
     the_song = songs[entry.to_i - 1]
   else
