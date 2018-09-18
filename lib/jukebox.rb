@@ -52,7 +52,7 @@ def help
   puts "Please enter a command:"
 end
 
-def play
+def play(songs)
   puts "Please enter a song name or number:"
   entry = gets.chomp
   the_song = nil
